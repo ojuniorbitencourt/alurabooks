@@ -15,6 +15,7 @@
 
 <body>
     <header class="cabeçalho">
+        <!-- Menu -->
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
             <label for="menu">
@@ -40,17 +41,21 @@
             </ul>
             <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
         </div>
+        <!-- Ícones do menu -->
         <div class="container">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
             <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
             <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
+    <!-- Banner -->
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <!-- 1 Session -->
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
@@ -72,7 +77,7 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-
+        <!-- Card -->
         <div class="card">
             <!-- 1° Linha -->
             <div class="card__descrição">
@@ -98,7 +103,99 @@
             </div>
         </div>
     </section>
+
+    <!-- 2 Session -->
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre "></div>
+                <div class="swiper-slide"><img src="img/guiafrontend.svg" alt="Livro sobre Guia Front-end"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+                <div class="swiper-slide"><img src="" alt=""></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <!-- 1° Linha -->
+            <div class="card__descrição">
+                <!-- 1° Coluna -->
+                <div class="descrição">
+                    <img src="img/Estrelinhas.svg" alt="Estrelinhas">
+                    <h3 class="descrição__titulo">Autora do Mês</h3>
+                    <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <!-- 2° Coluna -->
+                <img src="img/escritora.svg" alt="Foto da escritora" class="descrição__imagem">
+            </div>
+
+            <!-- 2° Linha -->
+            <div class="card__botões">
+                <!-- 1° Coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar livro no carrinho de compras"></li>
+                </ul>
+                <!-- 2° Coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
     
+    <!-- 3 Session -->
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">Android</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">Marketing Digital</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">Agile</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">Startups</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">HTML & CSS</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">Python</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">OO</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="" class="tópicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+    <!-- Contato -->
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre o seu e-mail" class="contato__email">
+    </section>
+    <!-- Quebra de Linha/Quebra de contexto -->
+    <hr/>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

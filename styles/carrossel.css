@@ -22,6 +22,10 @@
     margin: 0.5em 0;
 }
 
+.descrição img {
+    padding-bottom: 0.5em;
+}
+
 .card__descrição {
     display: flex;
     justify-content: space-between;
